@@ -7,6 +7,10 @@ require "./action/stream.rb"
 
 set :public_folder, File.dirname(__FILE__) + '/static'
 
+before do
+  @site_title = "Sinatra Application"
+end
+
 get "/" do
   "Hell yeah!"
 end
