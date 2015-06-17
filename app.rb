@@ -1,4 +1,7 @@
+# coding: utf-8
+
 require "sinatra"
+require 'sinatra/reloader' if development?
 require "tilt/erb"
 require "./action/stream.rb"
 
@@ -17,6 +20,7 @@ get "/test" do
 end
 
 get "/erb" do
+  @title = "erb template!!!"
   erb :index
 end
 
