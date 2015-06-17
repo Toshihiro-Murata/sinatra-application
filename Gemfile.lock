@@ -25,6 +25,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
+  backports
   sinatra
   sinatra-contrib
 
