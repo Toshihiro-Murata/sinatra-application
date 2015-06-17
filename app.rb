@@ -19,9 +19,9 @@ get "/" do
   erb :index
 end
 
-get "/stream" do
-  Stream.new
-end
+#get "/stream" do
+#  Stream.new
+#end
 
 get "/send_message" do
   @title = "Send a message"
