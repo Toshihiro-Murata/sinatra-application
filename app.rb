@@ -16,19 +16,6 @@ after do
 end
 
 get "/" do
-  "Hell yeah!"
-end
-
-get "/hello/:name" do
-  "Hello #{params['name']}!"
-end
-
-get "/test" do
-  "Test!!!"
-end
-
-get "/erb" do
-  @title = "erb template!!!"
   erb :index
 end
 
