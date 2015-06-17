@@ -33,3 +33,9 @@ post "/send_message" do
   @message = params[:message]
   erb :sent_message
 end
+
+get "/:name" do
+  if /^(about|contact|works)$/.match(params["name"])
+    erb params["name"].to_sym
+  end
+end
