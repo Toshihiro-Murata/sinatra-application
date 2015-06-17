@@ -1,4 +1,5 @@
 require "sinatra"
+require "tilt/erb"
 
 get "/" do
   "Hell yeah!"
@@ -10,4 +11,8 @@ end
 
 get "/test" do
   "Test!!!"
+end
+
+get "/erb" do
+  erb :index
 end
