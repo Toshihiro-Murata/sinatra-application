@@ -7,3 +7,7 @@ end
 get "/hello/:name" do
   "Hello #{params['name']}!"
 end
+
+get "/test" do
+  "Test!!!"
+end
