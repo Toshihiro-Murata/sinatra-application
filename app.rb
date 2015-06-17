@@ -27,3 +27,14 @@ end
 get "/stream" do
   Stream.new
 end
+
+get "/send_message" do
+  @title = "Send a message"
+  erb :send_message
+end
+
+post "/send_message" do
+  @title = "Sent a message"
+  @message = params[:message]
+  erb :sent_message
+end
