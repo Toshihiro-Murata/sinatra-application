@@ -1,5 +1,6 @@
 require "sinatra"
 require "tilt/erb"
+require "./action/stream.rb"
 
 set :public_folder, File.dirname(__FILE__) + '/static'
 
@@ -17,4 +18,8 @@ end
 
 get "/erb" do
   erb :index
+end
+
+get "/stream" do
+  Stream.new
 end
