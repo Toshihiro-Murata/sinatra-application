@@ -11,6 +11,10 @@ before do
   @site_title = "Sinatra Application"
 end
 
+after do
+  logger.info "loading data"
+end
+
 get "/" do
   "Hell yeah!"
 end
